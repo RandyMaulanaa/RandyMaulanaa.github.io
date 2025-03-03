@@ -1,89 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Randy Maulana</title>
-        <link rel="stylesheet" href="sylish.css" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy Maulana</title>
+    <link rel="stylesheet" href="sylish.css">
+    <script src="main.js"></script>
 
+    
+    
+</head>
+<body>
+    <header class="navigasi">
+        <a href="index.html" class="balik_home">
+            <h1 class="nama">RANN</h1>
+        </a>
+        <nav>
+            <ul class="ul_nav">
+                <li><a href="#home" class="">Home</a></li>
+                <li><a href="#aboutme" class="">About Me</a></li>
+                <li><a href="#project" class="">Projects</a></li>
+                <li><a href="#contact" class="">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <body>
-            <div class="atas">
-                
-            </div>
-            <!-- navigasi -->
-            <div class="navigasi">
-                <a href="index.html" class="balik_home">
-                    <h1 class="nama">RANN</h1>
-                </a>
-                <ul class="ul_nav">
-                    <li class="li_nav">
-                        <a href="#home1" class="tulisan_home">HOME</a>
-                    </li>
-                    <li class="li_nav">
-                        <a href="#abooutme" class="tulisan_about">ABOUT ME</a>
-                    </li>
-                    <li class="li_nav">
-                        <a href="#project" class="tulisan_project">PROJECT SAYA</a>
+    <!-- Home Section -->
+    <section id="home" class="content">
+        <img src="asset/rann.jpeg" class="imgContent" alt="Randy Maulana">
+        <h1 class="welcome">
+            <span class="hi">Hi</span>
+            <span class="saya">Saya Randy</span>
+        </h1>
+    </section>
 
-                    </li>
-                        <li class="dropdown">
-                        <a href="#" class="dropdown_contact">CONTACT ME</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="wa">WhatsApp</a></li>
-                            <li><a href="#" class="gmail">Gmail</a></li>
-                        </ul>
-                    </li>
+    <!-- Aboout me Section -->
+    <section id="aboutme" class="content2">
+        <span class="fade">ABOUT ME</span>
+        <h2 class="tentangsaya">ABOUT ME</h2>
+        <img src="asset/raan11.png" class="imgContent2" alt="Randy Maulana" />
+    
+        <div class="about-container">
+            <div class="about-left">
+                <h3>Keahlian</h3>
+                <ul>
+                    <li>HTML, CSS</li>
+                    <li>MySQL</li>
+                    <li>Photoshop</li>
+                    <li>Adobe Premiere</li>
                 </ul>
             </div>
-
-            <!-- content -->
-             <selection id="home1">
-                <div class="content">
-                <img src="rann.jpeg" class="imgContent" />
-                <h1 class="welcome">
-                        <span class="hi">HI</span>
-                        <span class="saya">SAYA RANDY</span>
-                </h1>
-                </div>
-            </selection>
-
-            <!-- content2 -->
-
-            <section id="abooutme" class="content2">
-                <span class="fade">ABOUT ME</span>
-                <h2 class="tentangsaya">ABOUT ME</h2>
-
-                <img src="raan11.png" class="imgContent2" />
-                
-                <!-- kenapa tidak zoom in -->
-                <div class="row justify-content-center zoom-effect" >
-                    <div class="col-xl-10">
-                        <div class="text">
-                            <p>Hi
-                            saya manusia</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
-
-            <!-- content3 -->
-            <section id="project">
-                <div class="content3">
-                    <h1 class="project">
-                        <span>PROJECT SAYA</span>
-                    </h1>
-                    <img src="rann.jpeg" class="imgContent3" />
-
-                </div>
-            </section>
-
-
-            <!-- footer -->
-            <div class="footer">
-                <img src="Google-Gmail-Logo-PNG-Transparent-Image.png" class="imgFooter" />
-                <h1 class="footerinfo">randyymaulana.tkj1@gmail.com</h1>
+    
+            <div class="about-divider"></div>
+    
+            <div class="about-center">
+                <h3>Pengalaman Kerja</h3>
+                <ul>
+                    <li>Content Creator - YouTube (2018 - Sekarang)</li>
+                    <li>Thumbnail Editing - YouTube (2018 - Sekarang)</li>
+                </ul>
             </div>
-        </body>
+    
+            <div class="about-divider"></div>
+    
+            <div class="about-right">
+                <h3>Pendidikan</h3>
+                <p>Universitas Syiah Kuala - S1 Informatika (Sedang Ditempuh)</p>
+                <p>SMKN 1 Al-Mubarkeya - Teknik Komputer & Jaringan (Lulus 2022)</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Project Section -->
+    <section id="project" class="content3">
+        <span class="fade_project">PROJECT</span>
+        <h2 class="tulisan_project1">PROJECT</h2>
+        <img src="asset/rann.jpeg" class="imgContent3" alt="Projects">
+        <div class="gambar_project">
+            <a href="https://www.youtube.com/@ALLOFGAME03" target="youtube">
+            <img src="asset/Screenshot 2025-03-03 170620.png" class="imgProject" alt="Project 1"></a>
+            <img src="asset/Screenshot 2025-03-03 171010.png" class="imgProject" alt="Project 2">
+            <img src="asset/Screenshot 2025-03-03 171232.png" class="imgProject1" alt="Project 3">
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="content4">
+        <div> 
+            <h2 class="kontaksaya">Contact Me</h2>
+            <hr>
+            <div class="alamat">
+                <div class="contact-item">
+                    <img src="asset/loc.png" class="imgFooter_contact" alt="location Logo">
+                    <p>Indonesia, Aceh Besar</p>
+                </div>
+                <div class="contact-item">
+                    <img src="asset/tel.png" class="imgFooter_contact" alt="tel Logo">
+                    <p>WhatsApp: 0895-0308-0291</p>
+                </div>
+                <div class="contact-item_mail">
+                    <img src="asset/mail.png" class="imgFooter_contact_mail" alt="mail Logo">
+                    <p> Email: randyymaulana.tkj1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <img src="asset/Google-Gmail-Logo-PNG-Transparent-Image.png" class="imgFooter" alt="Gmail Logo">
+        <p class="footerinfo">randyymaulana.tkj1@gmail.com</p>
+    </footer>
+</body>
 </html>
