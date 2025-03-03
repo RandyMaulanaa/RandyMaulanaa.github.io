@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    
+}
+
+body{
+    background-image: url('asset/59276.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    overflow-y: scroll; 
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+.navigasi {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 10;
+}
+
+.balik_home{
+    text-decoration: none;
+}
+
+.nama{
+    font-size: 50px;
+    color: white;
+    margin-left: 50px;
+}
+
+
+.ul_nav{
+    margin-right: 90px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.ul_nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.ul_nav li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    width: 150px;
+    top: 35px;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    background-color: gray;
+}
+
+
+
+
+.content, .content4{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+
+
+}
+
+
+.imgContent {
+    width: 30%;
+    padding-left: 200px;
+    margin-right: 20%;
+    
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.imgContent.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.welcome {
+    color: white;
+    text-align: right;
+    padding-top: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.welcome.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hi{
+    display: flex-end;
+    font-size: 40px;
+
+}
+.saya{
+    display: flex;
+    font-size: 40px;
+}
+
+.content2 {
+    background-color: rgba(224, 196, 171, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; /* Memberikan lebih banyak ruang atas & bawah */
+    min-height: 100vh;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    width: 85%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-left, 
+.about-center, 
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-divider {
+    width: 3px;
+    background-color: #007BFF;
+    height: auto;
+    align-self: stretch;
+}
+
+.tentangsaya {
+    margin-bottom: 25px;
+    font-size: 45px; /* Perbesar teks */
+    font-weight: bold;
+    color: black;
+    font-family: "Raleway", sans-serif;
+}
+
+.imgContent2 {
+    width: 9%;
+    margin-bottom: 30px; /* Menambah jarak antara gambar dan teks */
+}
+
+.about-left h3, 
+.about-center h3, 
+.about-right h3 {
+    font-size: 28px; /* Perbesar subjudul */
+    margin-bottom: 15px;
+}
+
+.about-left ul, 
+.about-center ul, 
+.about-right p {
+    font-size: 20px; /* Perbesar isi teks */
+    line-height: 1.6;
+}
+
+.about-left ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-left ul li, 
+.about-center ul li, 
+.about-right p {
+    margin-bottom: 10px; /* Memberikan ruang antara setiap poin */
+}
+
+.fade{
+    color: black;
+    font-size: 50px;
+    transform: translateY(35px);
+    opacity: 10%;
+    font-family: "Raleway",  sans-serif;
+    font-weight: bold;
+    
+}
+
+.fade_project{
+    position: relative;
+    color: white;
+    font-size: 60px;
+    transform: translateX(-220px) translateY(-450px);
+    opacity: 0.1; 
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    
+}
+.tulisan_project1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    transform: translateX(-220px) translateY(-500px);
+    font-size: 50px;
+}
+
+.gambar_project {
+    position: absolute;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    top: 40%;
+    left: 15%;
+}
+
+.imgProject {
+    width: 300px; 
+    height: 180px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.imgProject1 {
+    width: 300px; 
+    height: 180px;
+    border-radius: 10px;
+    grid-column: span 2;
+    justify-self: center;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+
+.imgProject:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+.imgProject1:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+
+.tentangsaya{
+    margin-bottom: 20px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+}
+
+
+.kontaksaya{
+    transform: translate(100px, -230px);
+    color: white;
+    font-family: "Raleway",  sans-serif;
+    font-size: 40px;
+}
+
+hr{
+    width: 250px;
+    transform: translateX(100px) translateY(-210px);
+    
+}
+
+.alamat{
+    margin-left: 90px;
+    margin-top: -190px;
+    padding: 10px;
+}
+
+.alamat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+.contact-item_mail {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 30px;
+    gap: 22px;
+}
+
+.imgFooter_contact{
+    height: 50px;
+    width: auto;
+}
+.imgFooter_contact_mail{
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+}
+
+
+
+
+.zoom-effect {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: zoom-in 0.5s ease-in-out forwards;
+}
+
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.text{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+.content3{
+    background-color: rgba(4, 125, 158, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+
+}
+
+.imgContent3 {
+    position: absolute;
+    right: 0;
+    padding-right: 200px;
+    margin-bottom: 5%;
+    width: 30%;
+
+    opacity: 0;
+    transform: translateX(100px);
+    
+    display: block;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.imgContent3.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgFooter{
+    height: 20px;
+    width: auto;
+}
